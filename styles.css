@@ -49,18 +49,14 @@ body {
     gap: 1rem;
 }
 
-button {
-    cursor: pointer;
-}
-
 .btn__container button {
     padding: 0.7rem 2rem;
     border-radius: 2rem;
-   
+    cursor: pointer;
     font-size: 1rem;
 }
 
-.main-img__container img {
+.main-img__container img, .tab__content img{
     width: 100%;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -117,4 +113,52 @@ video {
 
 .bottom__headers h1:nth-child(1) {
     color: var(--primary-color);
+}
+
+.tab__container {
+    /* background: white; */
+    
+}
+
+.tab__buttons {
+    display: flex;
+    overflow: scroll;
+    gap: 2rem;
+    scrollbar-width: none;
+}
+
+.tab__buttons .tab__btn {
+    border: none;
+    background: #b9e8f9;
+    color: #0e6889;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tab__btn:hover {
+    background: #88dffe;
+}
+
+.tab__btn.active {
+    background: #1b8eb8;
+    color: white;
+}
+
+.tab__btn span {
+    width: max-content;
+}
+
+.tab__content {
+    display: none;
+    padding: 2rem;
+}
+
+.tab__content.active {
+    display: block;
 }
