@@ -8,13 +8,14 @@
 
 :root {
     --primary-color: #4772fa;
+    --background-gradient: linear-gradient(to bottom, rgb(185, 226, 240), #ffffff);
     --secondary-color: #7e8588;
     --background-color: #e0f0fa;
     --secondary-background-color: #fff;
 }
 
 body {
-    background: var(--background-color);
+    background: var(--background-gradient);
     font-family: "Poppins", serif;
 }
 
@@ -62,6 +63,7 @@ button {
 .main-img__container img {
     width: 100%;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .get-started__btn {
@@ -95,6 +97,7 @@ button {
     background: var(--secondary-background-color);
     padding: 2rem;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .todo-list__container h4, .calendar-view__container h4, .pomodoro__container h4, .habit-tracker__container h4 {
@@ -107,6 +110,11 @@ video {
     
 }
 
-source {
-    
+.bottom__headers {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.bottom__headers h1:nth-child(1) {
+    color: var(--primary-color);
 }
