@@ -1,5 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4772fa;
+    --secondary-color: #7e8588;
+    --background-color: #e0f0fa;
+    --secondary-background-color: #fff;
+}
+
+body {
+    background: var(--background-color);
+    font-family: "Poppins", serif;
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 2rem;
+}
+
+.main__header {
+    text-align: center;
+}
+
+.main__header h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.main__header h4 {
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn__container button {
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+   
+    font-size: 1rem;
+}
+
+.main-img__container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.get-started__btn {
+    background: var(--primary-color);
+    border: none;
+    color: white;
+}
+
+.get-started__btn:hover {
+    opacity: 80%;
+}
+
+.download__btn {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: none;
+}
+
+.img__row {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 2rem;
+}
+
+.img__row img {
+    width: 20%;
+}
+
+.todo-list__container, .calendar-view__container, .pomodoro__container, .habit-tracker__container {
+    background: var(--secondary-background-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.todo-list__container h4, .calendar-view__container h4, .pomodoro__container h4, .habit-tracker__container h4 {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+video {
+    width: 100%;
+    
+}
+
+source {
+    
 }
