@@ -80,13 +80,17 @@ body {
 
 .img__row {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.img__row div {
+    display: flex;
     gap: 2rem;
+    justify-content: space-between;
 }
 
 .img__row img {
-    width: 20%;
+    width: 40%;
 }
 
 .todo-list__container, .calendar-view__container, .pomodoro__container, .habit-tracker__container {
