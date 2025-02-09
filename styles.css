@@ -78,6 +78,14 @@ body {
     opacity: 75%;
 }
 
+.sign-up__btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.84);
+}
+
+.nav__links a:not(.sign-up__btn a):hover {
+    color: var(--primary-color);
+}
+
 .nav__links li {
 
 }
