@@ -1,3 +1,11 @@
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav__links');
+
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+}
+
 document.querySelectorAll('.tab__btn').forEach(button => {
     button.addEventListener('click', () => {
         // alert("clicked");

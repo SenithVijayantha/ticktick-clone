@@ -17,6 +17,7 @@
 body {
     background: var(--background-gradient);
     font-family: "Poppins", serif;
+    padding-top: 6rem;
 }
 
 .container {
@@ -26,6 +27,136 @@ body {
     /* justify-content: center; */
     /* align-items: center; */
     gap: 2rem;
+}
+
+.nav__container {
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.096) 0px 3px 8px;
+}
+
+.nav__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo__container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-logo__container img{
+    width: 35px;
+}
+
+.nav-logo__container span {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.nav__links {
+    list-style: none;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.nav__links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 450;
+    opacity: 75%;
+}
+
+.nav__links li {
+
+}
+
+.nav__links hr {
+    opacity: 25%;
+}
+
+.hamburger {
+    display: block;
+}
+
+.nav__links.active {
+    display: flex;
+}
+
+.nav__links.active li {
+    
+}
+
+.hamburger.active .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .line2 {
+    opacity: 0;
+}
+
+.hamburger.active .line3 {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (min-width: 992px) {
+    .hamburger {
+      display: none;
+    }
+
+    .nav__container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .nav__links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    .nav__links hr {
+        display: none;
+    }
+
+    .sign-up__btn {
+        border: 1px solid rgba(0, 0, 0, 0.275);
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.hamburger div {
+    width: 25px;
+    border-radius: 10px;
+    background: var(--primary-color);
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger div:nth-child(1) {
+    height: 1.5px;
+}
+
+.hamburger div:nth-child(2) {
+    height: 2.5px;
+}
+
+.hamburger div:nth-child(3) {
+    height: 3px;
 }
 
 .main__header {
