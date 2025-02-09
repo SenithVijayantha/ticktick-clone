@@ -24,8 +24,6 @@ body {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     gap: 2rem;
 }
 
@@ -65,7 +63,6 @@ body {
 .nav__links {
     list-style: none;
     display: none;
-    /* display: flex; */
     flex-direction: column;
     gap: 2rem;
     
@@ -259,7 +256,6 @@ video {
 }
 
 .tab__container {
-    /* background: white; */
     
 }
 
