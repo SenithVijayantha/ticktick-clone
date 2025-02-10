@@ -301,3 +301,52 @@ video {
 .tab__content.active {
     display: block;
 }
+
+.grid__container {
+    
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid i {
+    font-size: 2rem;
+}
+
+
+.grid h3 {
+    font-weight: 500;
+}
+
+.grid p {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.833);
+}
+
+.grid__items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.grid__container .link__container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid__container .link__container a {
+    color: rgb(73, 73, 73);
+    font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
